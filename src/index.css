@@ -1,0 +1,258 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a:hover {
+    color: black;
+}
+
+p {
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+article {
+    display: block;
+}
+
+html {
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+input {
+    font-size: 0.875rem !important;
+}
+
+textarea {
+    font-size: 0.875rem !important;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-size: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.75;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    background: #24292D !important;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.header-inner-container {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #3F4447;
+
+}
+
+.title-text {
+    color: #3F4447;
+    font-size: 4rem;
+}
+
+.todoItem {
+    display: flex;
+    color: #8D9091;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 30px;
+    background: #333639;
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    align-items: center;
+}
+
+.todoItem:focus {outline:0;}
+
+.todoItem h1 {
+    font-size: 2rem;
+}
+
+.todoItem i {
+    text-decoration: none !important;
+    opacity: 1 !important;
+}
+
+.todoItem :nth-child(3){
+ display: none;
+}
+
+.inner-container {
+    padding: 40px;
+}
+
+.completed {
+    background: #282C2F;
+}
+
+.completed h1 {
+    text-decoration: line-through !important;
+    opacity: 0.15;
+}
+
+.completed i {
+    color: #53B595;
+}
+.completed i:nth-child(2) {
+    display: none;
+}
+.completed i:nth-child(3) {
+    display: block;
+}
+
+
+
+.add-todo-bar {
+    display: flex;
+    color: #8D9091;
+    border-radius: 50px;
+    background: #333639;
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 30px;
+
+}
+
+.add-input {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 2rem !important;
+    color: #8D9091;
+    width: calc(100% - 100px);
+}
+
+.add-input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #414546;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #414546;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #414546;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #414546;
+}
+
+.add-todo-bar button {
+    color: #53B595;
+    background: none;
+    border: none;
+    outline: none;
+    height: 64px;
+    border-radius: 40px;
+    padding: 0px;  animation: pulse 2s infinite;
+}
+.add-todo-bar button:hover {
+  animation: none;
+}
+.add-todo-bar button:focus {outline:0;}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(109,178,151, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(109,178,151, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(109,178,151, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(109,178,151, 0.4);
+    box-shadow: 0 0 0 0 rgba(109,178,151, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(109,178,151, 0);
+      box-shadow: 0 0 0 10px rgba(109,178,151, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(109,178,151, 0);
+      box-shadow: 0 0 0 0 rgba(109,178,151, 0);
+  }
+}
+
+.nav-menu {}
+
+.nav-item {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-left: 30px;
+    color: #4e5356 !important;
+    padding: 5px 10px;
+}
+
+.active-nav {
+    color: #8D9091 !important;
+    border-radius: 5px;
+    border: 1px solid #8D9091;
+
+}
