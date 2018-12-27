@@ -1,7 +1,19 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
+
+
+/*
+* Header links component
+*/
+
+
+const toggleActivelink = () =>{
+    $(".nav-item").toggleClass('active-nav');
+}
+
 export const Header = () => {
+
     return (
         <header>
         <div className="container">
@@ -10,9 +22,9 @@ export const Header = () => {
                     Todos
                 </h1>
                  <div className="nav-menu">
-                    <Link className="nav-item active-nav" to="/"> Home </Link>  
+                    <Link className="nav-item active-nav" to="/" onClick={toggleActivelink}> Home </Link>  
                     
-                    <Link className="nav-item"  to="/listoftodos">  List from API  </Link>
+                    <Link className="nav-item"  to="/listoftodos" onClick={toggleActivelink}>  List from API  </Link>
                        
                   
                 </div>
@@ -22,3 +34,5 @@ export const Header = () => {
     </header>
     );
 };
+
+

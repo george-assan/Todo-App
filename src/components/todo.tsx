@@ -1,16 +1,17 @@
 import * as React from 'react';
 import  { TodoItem } from '../models'
 
+
+/*
+* Page  component display api call information
+*/
+
+
 interface Props {
   todo:TodoItem;
   toggle:(e) => void;
 
 }
-
-// interface State {
-//   value: string
-// }
-
 
 
 export class TodoRow extends React.Component<Props, {}> {

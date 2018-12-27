@@ -1,16 +1,9 @@
 import * as React from 'react';
-// import  from 'jquery';
 
 
-
-// export const AddTodoBar = () => {
-//     return (
-//              <div>   
-//                 <input className="add-input" type="text" placeholder="Enter todo title"/>
-//                 <button className="fas fa-plus-circle fa-2x" onClick=></button>
-//             </div>
-//     );
-// };
+/*
+* Add Todo form component
+*/
 
 interface Props {
   value:string
@@ -18,10 +11,6 @@ interface Props {
   onSave: (e) => void;
 
 }
-
-// interface State {
-//   value: string
-// }
 
 
 
@@ -47,14 +36,3 @@ export class AddTodoBar extends React.Component<Props, {}> {
 	}
 }
 
-
-
-
-// $(function() {
-//      // Focus on load
-//      $('.add-input').focus();
-//      // Force focus
-//      $('.add-input').focusout(function(){
-//          $('.add-input').focus();
-//       });
-// });

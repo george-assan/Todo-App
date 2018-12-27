@@ -3,22 +3,7 @@ import { VisibilityFilters, actiontypes } from '../actions';
 import { store } from '../store';
 
 
-
-// import { actionTypes } from '../actions/actionTypes';
-// import { TodoItem } from '../models';
-
-// export const membersReducer = (state: MemberEntity[] = [], action) => {
-//   switch (action.type) {
-//     case actionTypes.FETCH_TODOS:
-//       return handleFetchMembersCompleted(state, action.payload);
-//   }
-
-//   return state;
-// };
-
-// const handleFetchMembersCompleted = (state: MemberEntity[], payload: MemberEntity[]) => {
-//   return payload;
-// };
+//Initial state. Visibility filter not implemted will work in  update
 
 const initialState = {
   visibilityFilter: VisibilityFilters.SHOW_ALL,
@@ -26,16 +11,11 @@ const initialState = {
 }
 
 
-// function todoView(state = initialState, action) {
-//   switch (action.type) {
-//     case actiontypes.SET_VISIBILITY_FILTER:
-//       return Object.assign({}, state, {
-//         visibilityFilter: action.filter
-//       })
-//     default:
-//       return state
-//   }
-// }
+/*
+* Root reducer takin in the state and action. Firstly taking initial state
+*/
+
+
 
  const TodoReducer = (state = initialState, action) => {
 
