@@ -6,6 +6,12 @@ import { store } from '../store';
 import { toggleTodo } from '../actions';
 
 
+/*
+* Page  component display api call information
+*/
+
+
+
 interface State {
     todos: TodoItem[];
 }
